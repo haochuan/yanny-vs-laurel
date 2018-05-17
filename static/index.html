@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yanny vs Laurel Web Audio API</title>
+  <style>
+#container {
+  padding: 20px 40px;
+}
+#freqSlider {
+  margin-top: 10px;
+  width: 400px;
+}
+#freqLabel {
+  margin-top: 20px;
+}
+  </style>
+
+</head>
+<body>
+  <div id="container">
+    <p>So if you haven't heard the story yet, go checkout: <a href="https://www.nytimes.com/2018/05/15/science/yanny-laurel.html">Laurel or Yanny? What We Heard From the Experts</a></p>
+    <p>There is no magic here. Different ears have different sensitive frequency zones for the same audio clip.</p>
+    <p>Use the frequency slider below to try the magic. Have fun!</p>
+  
+  <audio id='audioTag' crossorigin="anonymous" src="yanny-laurel.wav" controls loop></audio>
+  <hr>
+  <input type="range" min="20" max="10000" value="20" step="1" class="slider" id="freqSlider">
+  <br>
+  <p id="freqLabel" >Frequency: 20</p>
+  </div>
+  <script src='script.js'></script>
+</body>
+</html>
