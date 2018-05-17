@@ -27,7 +27,7 @@ filterNode.type = 'bandpass'; // bandpass filter
 filterNode.gain.value = 100;
 filterNode.Q.value = 5;
 
-loadAudio('/yanny-laurel.wav');
+loadAudio('https://haochuan.github.io/yanny-vs-laurel/static/yanny-laurel.wav');
 
 // connect nodes
 gainNode.connect(filterNode);
